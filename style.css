@@ -1,0 +1,160 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+.container {
+    background-color: white;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "profile-picture heading"
+                         "informations experiences";
+}
+
+/* ---------------- PICTURE --------------- */
+
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    background-color: #4DD0E1;
+    grid-area: profile-picture;
+    order: 1;
+   
+}
+
+.profile-picture img {
+    margin: 30px;
+    max-height: 200px;
+    max-width: 200px;
+    border-radius: 100px;
+    box-shadow: 1px 1px 12px #555;
+}
+
+/* ---------------- HEADING ---------------- */
+
+.heading {
+    padding: 30px;
+    grid-area: heading;
+    order: 2;
+}
+
+.heading h1 {
+    font-weight: normal;
+    color: #404040;
+}
+
+.heading #job {
+    margin-top: 5px;
+    font-size: medium;
+    text-transform: capitalize;
+}
+
+.heading #trait {
+    border-bottom: 2px solid #4DD0E1;
+}
+
+.heading #name {
+    color: #4DD0E1;
+}
+
+/* ------------------ INFORMATIONS ------------------ */
+
+.informations {
+    display: flex;
+    flex-direction: column;
+    background-color: #4DD0E1;
+    grid-area: informations;
+    order: 4;
+}
+
+.informations i {
+    color: #555;
+}
+
+.informations h2 {
+    background-color: #404040;
+    color: #4DD0E1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.informations p {
+    margin-left: 20px;
+    color: #404040;
+}
+
+.informations #loisirs {
+    margin-top: auto;
+}
+
+.informations #loisirs #logos {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* ------------------ EXPERIENCES ------------------ */
+
+.experiences {
+    padding: 30px;
+    grid-area: experiences;
+    order: 3;
+}
+
+.experiences i {
+    color: #4DD0E1;
+}
+
+.experiences .title {
+    display: flex;
+    align-items: baseline;
+    border-bottom: 1px solid #4DD0E1;
+    margin: 40px 0 40px 0;
+}
+
+.experiences .title i {
+    margin-right: 20px;
+}
+
+.experiences .element {
+    display: flex;
+    align-items: baseline;
+    padding: 20px;
+}
+
+.experiences .date {
+    color: #404040;
+    min-width: 250px;
+}
+
+.experiences .text {
+    color: #404040;
+}
+
+.experiences #container {
+    display: flex;
+}
+
+.experiences #container div {
+    color: #404040;
+    font-size: 18px;
+}
+
+.experiences #container div ul li {
+    margin: 10px;
+}
+
+@media all and (max-width: 1000px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+}

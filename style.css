@@ -87,6 +87,7 @@ h1, h2, h3 {
 
 .informations p {
     margin-left: 20px;
+    padding: 10px;
     color: #404040;
 }
 

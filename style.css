@@ -133,7 +133,7 @@ h1, h2, h3 {
 
 .experiences .element {
     display: flex;
-    align-items: baseline;
+    align-items: flex-start;
     padding: 20px;
 }
 
@@ -164,18 +164,17 @@ h1, h2, h3 {
     color: #404040;
 }
 
-.experiences #container {
+.experiences #competences .container {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #555;
 }
 
-.experiences #container div {
-    color: #404040;
-    font-size: 18px;
+.experiences #competences .container .fullname {
+    text-transform: uppercase;
 }
 
-.experiences #container div ul li {
-    margin: 10px;
-}
 
 @media all and (max-width: 1000px) {
     .container {

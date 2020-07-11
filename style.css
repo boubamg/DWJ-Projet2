@@ -108,8 +108,6 @@ h1, h2, h3 {
 }
 
 
-
-
 /* ------------------ EXPERIENCES ------------------ */
 
 .experiences {
@@ -142,6 +140,24 @@ h1, h2, h3 {
 .experiences .date {
     color: #404040;
     min-width: 250px;
+    display: flex;
+    align-items: center;
+}
+.experiences .date .circle {
+    border-radius: 50%;
+    margin: 15px;
+} 
+
+.blue {
+    border: 3px solid #4DD0E1;
+}
+
+.experiences .date .point {
+    background-color: #4DD0E1;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%; 
+    margin: 3px;
 }
 
 .experiences .text {

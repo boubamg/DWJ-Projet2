@@ -172,25 +172,60 @@ h1, h2, h3 {
     color: #404040;
 }
 
-.experiences #competences .container {
+.experiences #recommandation .container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     color: #555;
 }
 
-.experiences #competences .container .visit-card{
+.experiences #recommandation .container .visit-card{
     margin: 20px 0;
 }
 
-.experiences #competences .container .fullname {
+.experiences #recommandation .container .fullname {
     text-transform: uppercase;
 }
 
+/* --------------------- Media queries --------------------- */
 
 @media all and (max-width: 1000px) {
     .container {
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media all and (max-width: 460px) {
+    .experiences {
+        max-width: 400px;
+    }
+    .experiences .element, .experiences #recommandation .container{
+        flex-direction: column;
+        align-items: center; 
+    } 
+}
+
+@media all and (max-width: 370px) {
+    .experiences {
+        max-width: 300px;
+    }
+    
+    .experiences .element {
+        flex-direction: column;
+       
+    } 
+
+    .experiences .title {
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 300px) {
+    .experiences {
+        max-width: 250px;
+    }
+    .experiences #recommandation .title {
+        font-size: 12px;
     }
 }

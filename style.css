@@ -124,8 +124,9 @@ h1, h2, h3 {
     order: 3;
 }
 
-.experiences i {
+.experiences .italic {
     color: #4DD0E1;
+    font-style: italic;
 }
 
 .experiences .title {
@@ -187,7 +188,7 @@ h1, h2, h3 {
     text-transform: uppercase;
 }
 
-/* --------------------- Media queries --------------------- */
+/* --------------------- MEDIA QUERIES --------------------- */
 
 @media all and (max-width: 1000px) {
     .container {

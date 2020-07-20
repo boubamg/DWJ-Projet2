@@ -210,6 +210,8 @@ h1, h2, h3 {
 @media all and (max-width: 370px) {
     .experiences {
         max-width: 300px;
+        padding: 0;
+        margin: auto;
     }
     
     .experiences .element {
